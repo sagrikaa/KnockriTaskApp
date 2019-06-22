@@ -8,7 +8,7 @@ A simple React application, where users will be able to view a job candidate's v
 
 * How did you decide which technologies to use as part of your solution?
 
-    I used React.js and various other dependencies. React was the basic requirement for this task. I implemented the front-end by consuming API's provided using Axios and managing the state via Context API.
+    I used React.js and various other dependencies. React was the basic requirement for this task. I implemented the front-end by           consuming API's provided using Axios and managing the state via Context API.
 
 * Are there any improvements you could make to your submission?
     I could have made the UI more appealing.
@@ -19,7 +19,7 @@ A simple React application, where users will be able to view a job candidate's v
      I would have loved to implement Redux but due to lack of complete knowledge and time constraint, I chose to go with context Api instead.
 
 
-* Implementation of Redux
+* Implementation of Redux:
     This being a small and simple application did not call for the use of Redux. Context Api and props passing has ben used where ever needed. 
     Component flow: App>Candidates>Application>Video>Comment
 
