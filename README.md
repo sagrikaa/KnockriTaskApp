@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Knockri Full Stack (React) Coding Assessment Submission By Sagrika Aggarwal
 
-## Available Scripts
+## What does it do?
 
-In the project directory, you can run:
+A simple React application, where users will be able to view a job candidate's video responses, comment on the responses & save the data. 
 
-### `npm start`
+## Questions
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* How did you decide which technologies to use as part of your solution?
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+    I used React.js and various other dependencies. React was the basic requirement for this task. I implemented the front-end by consuming API's provided using Axios and managing the state via Context API.
 
-### `npm test`
+* Are there any improvements you could make to your submission?
+    I could have made the UI more appealing.
+    Added a show comment section for each video. 
+   
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* What would you do differently if you were allocated more time?
+     I would have loved to implement Redux but due to lack of complete knowledge and time constraint, I chose to go with context Api instead.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Implementation of Redux
+    This being a small and simple application did not call for the use of Redux. Context Api and props passing has ben used where ever needed. 
+    Component flow: App>Candidates>Application>Video>Comment
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## How  the application works?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The user of this react application should be able to view the video response(s) of job candidates applying for a job at their company. The application should have the following workflow,
 
-### `npm run eject`
+1. Choose candidate from a list.
+2. Depending on the selection in the first step, if the selected candidate has an application, display the video response(s) of the candidate with the relevant question displayed in text. If the selected candidate does not have an application, display appropriate message.
+3. For each video response of a candidate, provide an option to enter comments.
+4. Provide a "Save" button that saves the comments to the api.json file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How to run the application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Run the backend api.json via npm start
+* Clone the project
+* Run npm install
+* Run application : npm start
+* Applicants will appear on the left side nav bar, clicking on any candidate would display there video responses along with questions and   comments on the right 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## API Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+API can be launched using npm start. You will need to run npm install once you starting working on the project to install dependencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Endpoint                     | Result                                              |
+|------------------------------|-----------------------------------------------------|
+| /candidates                  | Lists all available candidates                      |
+| /questions                   | Lists all available questions                       |
+| /applications                | Lists all available applications                    |
 
-### Code Splitting
+More info about API usage can be found at the [json-server repo](https://github.com/typicode/json-server).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
